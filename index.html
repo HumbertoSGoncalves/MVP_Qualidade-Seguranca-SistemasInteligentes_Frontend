@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Breast Cancer Prediction</title>
+</head>
+
+<body>
+
+    <!-- Introdução da página -->
+    <header>
+        <div class="title">
+            <h2>Sistema preditivo para Câncer de Mama</h2>
+            <br>
+            <img src="https://img.elo7.com.br/product/360x360/35C5B85/adesivo-sticker-cancer-de-mama-adesivo.jpg" alt="Câncer de Mama">
+            <p>Este sistema foi desenvolvido para auxiliar no diagnóstico de cancer de mama.</p>
+            <p>Basta inserir as informações do paciente nos campos fornecidos e pressionar o botão "Diagnosticar".</p>
+        </div>
+    </header>
+
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newRad" placeholder="Raio">
+        <input type="text" id="newTex" placeholder="Textura">
+        <input type="text" id="newPer" placeholder="Perímetro">
+        <input type="text" id="newArea" placeholder="Area">
+        <input type="text" id="newSmooth" placeholder="Maciez">
+        <span onclick="newItem()" class="addBtn">Diagnóstico</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Name</th>
+                <th>Radius</th>
+                <th>Texture</th>
+                <th>Perimeter</th>
+                <th>Area</th>
+                <th>Smoothness</th>
+                <th>Diagnostic</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

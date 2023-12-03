@@ -1,0 +1,119 @@
+/* Define estilos padrão para o corpo, listas e itens */
+body,
+ul,
+li {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:large;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 222, 199);
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para o título dentro do cabeçalho */
+.title {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgb(238, 214, 238);
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+/* Estilos para a seção de adição de novos itens */
+.newItem {
+    background-color: rgb(8, 8, 8);
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilos para o botão de adicionar novos itens */
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(71, 218, 83);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor:pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+/* Estilos para a seção de itens existentes */
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para o botão de fechar (excluir item) */
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+/* Estilos para o botão de atualizar */
+.update:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+/* Estilos para a tabela e suas células */
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align:center;
+}
+
+/* Estilos para a tabela em si */
+table{
+    background-color: white;
+    width: 50%;
+}
+
+/* Estilos para linhas ímpares da tabela */
+tr:nth-child(odd){
+    background-color: #f2e0f4;
+}
+
+/* Estilos para células da primeira coluna da tabela */
+th:nth-child(1){
+    width: 20%;
+}
+
+/* Estilos para linhas da tabela quando hover */
+tr:hover {
+    background: rgb(165, 142, 158);
+}
+
